@@ -19,81 +19,8 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Custom styles for this template -->
-        <link href="theme.css" rel="stylesheet">
-        <style>
-            /* CUSTOMIZE THE NAVBAR
-            -------------------------------------------------- */
-
-            /* Special class on .container surrounding .navbar, used for positioning it into place. */
-            .navbar-wrapper {
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              z-index: 10;
-              margin-top: 20px;
-              margin-bottom: 20px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-            }
-            .navbar-wrapper .navbar {
-
-            }
-
-            /* Remove border and change up box shadow for more contrast */
-            .navbar .navbar-inner {
-              border: 0;
-              -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-                 -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-                      box-shadow: 0 2px 10px rgba(0,0,0,.25);
-            }
-
-            /* Downsize the brand/project name a bit */
-            .navbar .brand {
-              padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-              font-size: 16px;
-              font-weight: bold;
-              text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-            }
-
-            /* Navbar links: increase padding for taller navbar */
-            .navbar .nav > li > a {
-              padding: 15px 20px;
-            }
-
-            /* Offset the responsive button for proper vertical alignment */
-            .navbar .btn-navbar {
-              margin-top: 10px;
-            }
-
-            /* RESPONSIVE CSS
-            -------------------------------------------------- */
-
-            @media (max-width: 979px) {
-
-              .container.navbar-wrapper {
-                margin-bottom: 0;
-                width: auto;
-              }
-              .navbar-inner {
-                border-radius: 0;
-                margin: -20px 0;
-              }
-            }
-
-
-            @media (max-width: 767px) {
-
-              .navbar-inner {
-                margin: -20px;
-              }
-            }
-
-            /* ADD PADDING TO TOP OF BODY SO THAT NAVBAR DOESN'T OVERLAY THE CONTENT 
-            --------------------------------------------------- */
-            body {padding-top: 40px;}
-        </style>
+        <!-- CSS styles for the navbar / carousel --> 
+        <link rel="stylesheet" href="css_mine/mystyles_simple.css">
     </head>
     <body role="document">
 
@@ -114,20 +41,19 @@
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
                                 <li><a href="index.html">Home</a></li>
-                                <li class="dropdown">
+                                <li class="dropdown active">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
+                                        <li class="dropdown-header">Ongoing</li>
+                                        <li><a href="projects_ongoing_workingpapers.html">Working Papers</a></li>
+                                        <li><a href="projects_ongoing_projects.html">Projects</a></li>
                                         <li class="divider"></li>
-                                        <li class="dropdown-header">Nav header</li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li><a href="#">One more separated link</a></li>
+                                        <li class="dropdown-header">All</li>
+                                        <li><a href="projects_all_projects.html">Projects</a></li>
                                     </ul>
                                 </li>
-                                <li class="active"><a href="#">Publications</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="#about">About</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
@@ -146,6 +72,8 @@
           
             <hr>
               <h3>Machine Learning:</h3>
+            <hr>
+              <h3>Genomics:</h3>
             <hr>
               <h3>Artificial Intelligence:</h3>
             <hr>
